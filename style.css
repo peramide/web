@@ -1,0 +1,118 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 1rem;
+  }
+  
+  .container {
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  .logo {
+    max-width: 150px;
+    height: auto;
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .header-container {
+    text-align: left;
+    margin-bottom: 20px;
+  }
+  
+  .header-container h1 {
+    font-size: 2rem;
+    color: #0055a5;
+    margin: 0;
+    transform: scale(1.0, 2);
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .header-container h1 span {
+    font-weight: normal;
+    font-family: monospace;
+    color: #0055a5;
+  }
+  
+  .header-container p {
+    font-size: 1rem;
+    color: #333;
+  }
+  
+  .form-container {
+    background-color: #f2f2f2;
+    padding: 2rem;
+    border-radius: 6px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .form-container input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .form-container button {
+    background-color: #0071ce;
+    color: white;
+    padding: 12px;
+    border: none;
+    width: 100%;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  .form-container button:hover {
+    background-color: #005fa3;
+  }
+  
+  .options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+    font-size: 0.9rem;
+  }
+  
+  .options a {
+    color: #0071ce;
+    text-decoration: none;
+  }
+  
+  .error {
+    color: red;
+    margin-top: 10px;
+    display: none;
+    text-align: left;
+    font-size: 0.9rem;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 500px) {
+    .form-container {
+      padding: 1.5rem;
+    }
+  
+    .header-container h1 {
+      font-size: 1.8rem;
+    }
+  
+    .form-container button {
+      font-size: 1rem;
+    }
+  }
+  
